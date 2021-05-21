@@ -19,6 +19,8 @@
 <br> `docker exec -it <container id> python manage.py migrate`
 8. Создайте суперпользователя:
 <br> `docker exec -it <container id> python manage.py createsuperuser`
+9. Соберите статику в внутри контейнера в `/code/static`:
+<br> `docker exec -it <container id> python manage.py collectstatic`
 ## Настройка доступных хостов
 Настройка доступных хостов осуществляется в файле *.env*:
 <br> `ALLOWED_HOSTS=127.0.0.1,localhost`
